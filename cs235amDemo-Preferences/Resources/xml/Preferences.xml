@@ -11,10 +11,12 @@
         android:summary="User's name"
         android:defaultValue="" 
         android:entryValues="@array/greetings"/>
-    <SpinnerPreference
+    <ListPreference
     	android:key="greeting"
         android:title="Greeting"
         android:summary="How to say hi"
         android:defaultValue="Hello" 
-        android:id="@+id/greetingSpinner"/>
+        android:entries="@array/greetings"
+        android:entryValues="@array/greeting_values"
+        android:id="@+id/greetingList"/>
  </PreferenceScreen>

@@ -34,7 +34,7 @@ namespace cs235amDemoPreferences
 				}
 				else
 				{
-					button.Text = "Hello " + pref.GetString("name", "Donald Duck");
+					button.Text = pref.GetString("greeting", "Hello") + " " + pref.GetString("name", "Geek");
 				}
 			};
 		}

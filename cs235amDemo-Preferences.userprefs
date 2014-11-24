@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cs235amDemo-Preferences\MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.10.71.34.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="cs235amDemo-Preferences/SettingsActivity.cs">
     <Files>
-      <File FileName="cs235amDemo-Preferences\MainActivity.cs" Line="43" Column="43" />
-      <File FileName="cs235amDemo-Preferences\SettingsActivity.cs" Line="58" Column="58" />
-      <File FileName="cs235amDemo-Preferences\Resources\xml\Preferences.xml" Line="12" Column="12" />
-      <File FileName="cs235amDemo-Preferences\Resources\menu\SettingsActivityActions.xml" Line="34" Column="34" />
+      <File FileName="cs235amDemo-Preferences/SettingsActivity.cs" Line="10" Column="10" />
+      <File FileName="cs235amDemo-Preferences/Resources/xml/Preferences.xml" Line="22" Column="22" />
+      <File FileName="cs235amDemo-Preferences/MainActivity.cs" Line="78" Column="78" />
+      <File FileName="cs235amDemo-Preferences/Resources/values/Strings.xml" Line="17" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -3,9 +3,15 @@
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">cs235amDemo-Preferences</string>
 	<string-array name="greetings">
-	    <item>@string>Hello</item>
-	    <item>@string>Howdy Yall</item>
-	    <item>@string>Hey</item>
-	    <item>@string>Hi</item>
+	    <item>Hello</item>
+	    <item>Howdy Yall</item>
+	    <item>Hey</item>
+	    <item>Hi</item>
+	</string-array>
+	<string-array name="greeting_values">
+	    <item>Hello</item>
+	    <item>Howdy</item>
+	    <item>Hey</item>
+	    <item>Hi</item>
 	</string-array>
 </resources>
