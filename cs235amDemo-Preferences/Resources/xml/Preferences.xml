@@ -5,14 +5,16 @@
         android:title="Count"
         android:summary="Counts button clicks when true"
         android:defaultValue="true" />
-        <!---
-    <ListPreference
-        android:dependency="pref_sync"
-        android:key="pref_syncConnectionType"
-        android:title="@string/pref_syncConnectionType"
-        android:dialogTitle="@string/pref_syncConnectionType"
-        android:entries="@array/pref_syncConnectionTypes_entries"
-        android:entryValues="@array/pref_syncConnectionTypes_values"
-        android:defaultValue="@string/pref_syncConnectionTypes_default" />
-        -->
-</PreferenceScreen>
+    <EditTextPreference
+    	android:key="name"
+        android:title="Name"
+        android:summary="User's name"
+        android:defaultValue="" 
+        android:entryValues="@array/greetings"/>
+    <SpinnerPreference
+    	android:key="greeting"
+        android:title="Greeting"
+        android:summary="How to say hi"
+        android:defaultValue="Hello" 
+        android:id="@+id/greetingSpinner"/>
+ </PreferenceScreen>

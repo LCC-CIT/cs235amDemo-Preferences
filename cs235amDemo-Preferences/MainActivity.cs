@@ -34,7 +34,7 @@ namespace cs235amDemoPreferences
 				}
 				else
 				{
-					button.Text = "Click to say hello";
+					button.Text = "Hello " + pref.GetString("name", "Donald Duck");
 				}
 			};
 		}
@@ -51,7 +51,7 @@ namespace cs235amDemoPreferences
 			switch (item.ItemId) 
 			{
 				case Resource.Id.action_settings:
-				StartActivity(typeof(SettingsActivity));
+					StartActivity(typeof(SettingsActivity));
 					return true;
 				default:
 				return base.OnOptionsItemSelected (item);

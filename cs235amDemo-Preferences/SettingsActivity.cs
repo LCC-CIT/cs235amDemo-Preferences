@@ -18,9 +18,14 @@ namespace cs235amDemoPreferences
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
+			string[] greetings = new string[] {
+				"Hello", "Hi", "Hola", "Yo", "Howdy Ya'll", "Merhaba",
+				"Salam"};
+
 			base.OnCreate (bundle);
 
 			AddPreferencesFromResource (Resource.Xml.Preferences);
+
 		}
 	}
 }
