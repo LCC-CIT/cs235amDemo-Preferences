@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <CheckBoxPreference
-        android:key="pref_sync"
-        android:title="Sync"
-        android:summary="Sync something"
+        android:key="count_clicks"
+        android:title="Count"
+        android:summary="Counts button clicks when true"
         android:defaultValue="true" />
         <!---
     <ListPreference

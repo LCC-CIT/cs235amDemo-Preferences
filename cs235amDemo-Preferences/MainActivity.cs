@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Preferences;
 
 namespace cs235amDemoPreferences
 {
@@ -26,7 +27,15 @@ namespace cs235amDemoPreferences
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			
 			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
+				ISharedPreferences pref = PreferenceManager.GetDefaultSharedPreferences(this);
+				if(pref.GetBoolean("count_clicks", true))
+				{
+					button.Text = string.Format ("{0} clicks!", count++);
+				}
+				else
+				{
+					button.Text = "Click to say hello";
+				}
 			};
 		}
 
@@ -34,6 +43,19 @@ namespace cs235amDemoPreferences
 		{
 			MenuInflater.Inflate (Resource.Menu.SettingsActivityActions, menu);       
 			return base.OnCreateOptionsMenu (menu);
+		}
+
+		public override bool OnOptionsItemSelected (IMenuItem item)
+		{
+			// Handle presses on the action bar items
+			switch (item.ItemId) 
+			{
+				case Resource.Id.action_settings:
+				StartActivity(typeof(SettingsActivity));
+					return true;
+				default:
+				return base.OnOptionsItemSelected (item);
+			}
 		}
 
 	}
