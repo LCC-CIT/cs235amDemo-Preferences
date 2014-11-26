@@ -5,12 +5,16 @@
 [Oo]bj
 [Bb]in
 *.user
+*.userprefs
 *.suo
 *.[Cc]ache
 *.bak
 *.ncb
 *.log 
 [Tt]humbs.db 
-TipOfTheDay.Domain/Concrete/TipOfTheDayDatabase.dacpac
+*.dacpac
 *.mdf
 *.ldf
+cs235amDemo-Preferences.userprefs
+*.userprefs
+*.userprefs
